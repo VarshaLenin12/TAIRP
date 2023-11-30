@@ -36,7 +36,7 @@ top_rated_movies = df.sort_values(by='Rating', ascending=False).head(10)
 print("Top 10 Rated Movies:")
 print(top_rated_movies[['Name', 'Rating']])
 
-# plot a countplot to display th number of movies released per year
+# plot a countplot to display the number of movies released per year
 plt.figure(figsize=(12, 6))
 sns.countplot(x='Year', data=df)
 plt.title('Number of Movies Released Each Year')
