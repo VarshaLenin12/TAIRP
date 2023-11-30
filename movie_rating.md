@@ -7,7 +7,7 @@ import seaborn as sns
 from google.colab import drive
 drive.mount('/content/drive')
 
-# Load the IMDb Movies India dataset
+# Load the dataset
 df = pd.read_csv('/content/drive/MyDrive/IMDb Movies India.csv', encoding='latin1')
 
 # Display basic information about the dataset
