@@ -3,9 +3,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
-from google.colab import drive
 
 # Mounting Google Drive to access the dataset
+from google.colab import drive
 drive.mount('/content/drive')
 
 # Reading the FIFA dataset
