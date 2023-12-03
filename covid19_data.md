@@ -99,10 +99,10 @@ app.layout = html.Div([
     [Input('country-dropdown', 'value')])
 def update_graph(selected_country):
 
-    # Filter data for the selected country
+# Filter data for the selected country
     country_data = df[df['location'] == selected_country]
 
-    # Create a plot
+# Create a plot
     fig = {'data': [{'x': country_data['date'], 'y': country_data['total_cases'], 'type': 'line', 'name': 'Total Cases'},
                     {'x': country_data['date'], 'y': country_data['total_deaths'], 'type': 'line', 'name': 'Total Deaths'}],
            'layout': {'title': f'Total Cases and Deaths in {selected_country}',
