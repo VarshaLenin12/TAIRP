@@ -6,10 +6,9 @@ import seaborn as sns
 # Load the dataset
 from google.colab import drive
 drive.mount('/content/drive')
-
-# Display basic information about the dataset
 df=pd.read_csv('/content/drive/MyDrive/e_commerce/Amazon Sale Report.csv')
 
+# Display basic information about the dataset
 df.head()
 print(df.info())
 
